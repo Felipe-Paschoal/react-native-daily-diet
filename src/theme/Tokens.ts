@@ -22,11 +22,12 @@ export const tokens = {
     bold: 'NunitoSans_700Bold',
   },
   fontSize: {
-    ssm: 12,
-    sm: 14,
-    md: 16,
-    lg: 18,
-    xl: 24,
-    xxl: 32,
+    bodyXS: 12,
+    bodyS: 14,
+    bodyM: 16,
+    titleXS: 14,
+    titleS: 18,
+    titleM: 24,
+    titleG: 32,
   },
 };
