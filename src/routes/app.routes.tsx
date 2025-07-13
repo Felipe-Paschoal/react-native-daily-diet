@@ -6,11 +6,14 @@ import {
 import { Meals } from '@screens/Meals';
 import { MealsDetails } from '@screens/MealsDetails';
 import { CreateMeal } from '@screens/CreateMeal';
+import { MealDTO } from '../@types/dtos/MealDTO';
+import { GeneralStatistics } from '@screens/GeneralStatistics';
 
 export type AppParamsList = {
   Meals: undefined;
-  MealsDetails: undefined;
+  MealsDetails: MealDTO;
   CreateMeal: undefined;
+  GeneralStatistics: undefined;
 };
 
 export type AppScreenProps<T extends keyof AppParamsList> =
@@ -24,6 +27,7 @@ export function AppRoutes() {
       <Screen name="Meals" component={Meals} />
       <Screen name="MealsDetails" component={MealsDetails} />
       <Screen name="CreateMeal" component={CreateMeal} />
+      <Screen name="GeneralStatistics" component={GeneralStatistics} />
     </Navigator>
   );
 }
