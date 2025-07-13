@@ -4,7 +4,7 @@ import {
   NunitoSans_700Bold,
   useFonts,
 } from '@expo-google-fonts/nunito-sans';
-import { Meals } from '@screens/Meals';
+import { Routes } from '@routes/index';
 import { ThemeProvider } from '@theme/ThemeContext';
 import { StatusBar } from 'react-native';
 
@@ -17,7 +17,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Meals /> : <LoadingScreen />}
+      {fontsLoaded ? <Routes /> : <LoadingScreen />}
     </ThemeProvider>
   );
 }
