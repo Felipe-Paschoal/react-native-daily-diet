@@ -18,8 +18,8 @@ export const tokens = {
     white: '#FFFFFF',
   },
   fontFamily: {
-    regular: 'Roboto_400Regular',
-    bold: 'Roboto_700Bold',
+    regular: 'NunitoSans_400Regular',
+    bold: 'NunitoSans_700Bold',
   },
   fontSize: {
     ssm: 12,
