@@ -155,9 +155,10 @@ export function GeneralStatistics({
                 fontSize: fontSize.bodyS,
                 fontFamily: fontFamily.regular,
                 color: colors.gray2,
+                textAlign: 'center',
               }}
             >
-              refeições dentro da dieta
+              refeições dentro da {'\n'}dieta
             </Text>
           </View>
           <View
@@ -186,9 +187,10 @@ export function GeneralStatistics({
                 fontSize: fontSize.bodyS,
                 fontFamily: fontFamily.regular,
                 color: colors.gray2,
+                textAlign: 'center',
               }}
             >
-              refeições fora da dieta
+              refeições fora da {'\n'}dieta
             </Text>
           </View>
         </View>
