@@ -511,7 +511,12 @@ export function Meals({ route, navigation }: AppScreenProps<'Meals'>) {
       >
         Refeições
       </Text>
-      <Button variant="solid" Icon={PlusIcon} title="Nova refeição" />
+      <Button
+        onPress={() => navigation.navigate('CreateMeal')}
+        variant="solid"
+        Icon={PlusIcon}
+        title="Nova refeição"
+      />
 
       <SectionList
         style={{ marginTop: 32 }}

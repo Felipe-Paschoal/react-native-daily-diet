@@ -1,15 +1,21 @@
-import { AppScreenProps } from '@routes/app.routes';
+import { useNavigation } from '@react-navigation/native';
 import { useTokens } from '@theme/ThemeContext';
-import { ArrowLeftIcon, LeafIcon } from 'phosphor-react-native';
+import { ArrowLeftIcon } from 'phosphor-react-native';
 import { Pressable, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { tokens } from '@theme/Tokens';
 
-export function CreateMeal({
-  route,
-  navigation,
-  
-}: AppScreenProps<'CreateMeal'>) {
+type defaultContainerProps = {
+  ArrowLeftColor: keyof typeof tokens.colors;
+  HeaderTitle: string;
+  HeaderSubtitle?: string;
+  HeaderColor: keyof typeof tokens.colors;
+};
+
+export function DefaultContainer() {
   const { colors, fontFamily, fontSize } = useTokens();
+  const navigation = useNavigation();
+
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: colors.gray5 }}>
       <Pressable
